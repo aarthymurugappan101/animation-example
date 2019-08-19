@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <span id="hearts">
+            <img src="heart.jpg" >
+            <img src="heart.jpg" >
+            <img src="heart.jpg" >
+        </span>
+    </body>
+    <script>
+        document.getElementById("hearts").childNodes[6].src = "javascript.jpg";
+        var imgarray = document.getElementsByTagName("img");
+        for (var i=0;i<imgarray.length;i++){
+            imgarray[i].onclick = function(){
+                this.src="javascript.jpg";
+            }
+        }
+        // document.getElementsByTagName("img").onclick = function{
+        //     this.src = "javascript.jpg";
+        //  }
+    </script>
+</html>
